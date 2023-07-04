@@ -8,7 +8,6 @@ export const StyledWrapper = styled.div`
     left: 50%;
     padding: 0;
     transform: translate(-50%, 0%);
-
     ul {
         border: 3px solid black;
         display: flex;
@@ -17,13 +16,11 @@ export const StyledWrapper = styled.div`
         flex-direction: column;
         list-style: none;
         min-width: max-content;
-
         li {
             padding: 16px 24px;
             &:hover {
                 a {
                     position: relative;
-
                     &::before {
                         content: '';
                         position: absolute;
@@ -37,7 +34,6 @@ export const StyledWrapper = styled.div`
                 }
             }
         }
-
         p {
             font-weight: 300;
         }

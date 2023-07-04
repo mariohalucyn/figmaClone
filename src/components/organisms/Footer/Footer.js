@@ -21,7 +21,6 @@ const StyledFooterNav = styled.div`
         display: flex;
         flex-direction: column;
         gap: 20px;
-
         li {
             a {
                 text-decoration: none;
@@ -44,7 +43,6 @@ const StyledDiv = styled.div`
         display: flex;
         gap: 36px;
         list-style: none;
-
         li {
             a {
                 text-decoration: none;

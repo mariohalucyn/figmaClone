@@ -16,8 +16,6 @@ const Products = () => (
             <li>
                 <a href="">Figma</a>
                 <p>An all-in-one design platform</p>
-            </li>
-            <li>
                 <Figma />
             </li>
             <li>
@@ -40,8 +38,6 @@ const Products = () => (
             <li>
                 <a href="">FigJam</a>
                 <p>An online whiteboard for teams</p>
-            </li>
-            <li>
                 <img src={FigJam} alt="FigJam" />
             </li>
             <li>
