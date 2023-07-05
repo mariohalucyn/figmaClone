@@ -8,14 +8,15 @@ export const StyledWrapper = styled.div`
     left: 50%;
     padding: 0;
     transform: translate(-50%, 0%);
+    background: white;
     ul {
-        border: 3px solid black;
+        min-width: max-content;
         display: flex;
+        flex-direction: column;
         margin: 0 auto;
         padding: 0;
-        flex-direction: column;
         list-style: none;
-        min-width: max-content;
+        border: 3px solid black;
         li {
             padding: 16px 24px;
             &:hover {

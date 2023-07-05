@@ -16,10 +16,10 @@ export const StyledList = styled.ul`
 `
 
 export const StyledListItem = styled.li`
-    display: flex;
-    gap: 6px;
-    align-items: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     padding: 8px 0;
     svg {
         overflow: hidden;
@@ -29,9 +29,9 @@ export const StyledListItem = styled.li`
         pointer-events: none;
     }
     a {
+        position: relative;
         text-decoration: none;
         color: black;
-        position: relative;
     }
     .arrow {
         padding-top: 4px;

@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledWrapper = styled.div`
-    background: black;
-    color: white;
     min-height: 100vh;
-    justify-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 48px;
+    background: black;
+    color: white;
 `
 
 const StyledFooterNav = styled.div`
@@ -17,10 +17,10 @@ const StyledFooterNav = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     ul {
-        list-style: none;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        list-style: none;
         li {
             a {
                 text-decoration: none;
