@@ -66,17 +66,3 @@ export const NavStyledListItem = styled.li`
         }
     }
 `
-export const GetStarted = styled.a`
-    background: rgb(85, 81, 255);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    border: none;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 14px 24px 16px;
-    margin: 0 0 0 8px;
-    transition: 0.2s ease;
-    &:hover {
-        transform: translateY(-4px);
-    }
-`

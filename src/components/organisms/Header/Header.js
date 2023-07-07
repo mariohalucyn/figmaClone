@@ -5,12 +5,12 @@ import { ReactComponent as Arrow } from '../../../assets/icons/arrow.svg'
 import Enterprise from '../../molecules/Enterprise/Enterprise'
 import Resources from '../../molecules/Resources/Resources'
 import {
-    GetStarted,
     NavStyledListItem,
     StyledList,
     StyledListItem,
     StyledWrapper,
 } from './Header.styles'
+import GetStarted from '../../atoms/GetStarted/GetStarted'
 
 const Header = () => {
     const [isProductHover, setIsProductHover] = useState(false)
@@ -55,7 +55,7 @@ const Header = () => {
                 <NavStyledListItem>
                     <a href="">Log in</a>
                 </NavStyledListItem>
-                <GetStarted>Get started for free</GetStarted>
+                <GetStarted />
             </StyledList>
         </StyledWrapper>
     )

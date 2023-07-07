@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import GetStarted from '../../atoms/GetStarted/GetStarted'
+import AnimatedHeader from '../../atoms/AnimatedHeader/AnimatedHeader'
 
 const StyledWrapper = styled.div`
     min-height: 100vh;
@@ -55,8 +57,22 @@ const StyledDiv = styled.div`
     }
 `
 
+const StyledInfo = styled.div`
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
 const Footer = () => (
     <StyledWrapper>
+        <StyledInfo>
+            <AnimatedHeader />
+            <div>
+                <GetStarted fontSize="48px" width="500px" height="100px" />
+            </div>
+        </StyledInfo>
         <StyledFooterNav>
             <ul>
                 <li>
