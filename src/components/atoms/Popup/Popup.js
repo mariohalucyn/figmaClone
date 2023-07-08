@@ -47,6 +47,7 @@ const CloseButton = styled.div`
     position: relative;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 
     &::before {
         content: '';

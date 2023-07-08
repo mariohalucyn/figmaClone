@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const StyledWrapper = styled.button`
+const StyledWrapper = styled.a`
     background: rgb(85, 81, 255);
     color: rgb(255, 255, 255);
     border-radius: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
     border: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
         'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
@@ -24,7 +26,12 @@ const StyledWrapper = styled.button`
 
 const GetStarted = ({ width, height, fontSize }) => {
     return (
-        <StyledWrapper width={width} height={height} fontSize={fontSize}>
+        <StyledWrapper
+            href=""
+            width={width}
+            height={height}
+            fontSize={fontSize}
+        >
             Get started for free
         </StyledWrapper>
     )

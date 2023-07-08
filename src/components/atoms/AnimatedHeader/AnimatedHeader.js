@@ -30,13 +30,9 @@ const AnimatedHeader = () => {
 
     useEffect(() => changeState, [])
 
-    const StyledSpan = styled.span`
-        color: ${color};
-    `
-
     return (
         <StyledWrapper>
-            Start <StyledSpan>{state}</StyledSpan>
+            Start <span style={{ color: color }}>{state}</span>
             <br />
             with figma
         </StyledWrapper>
