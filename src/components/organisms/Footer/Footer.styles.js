@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
     min-height: 100vh;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +43,7 @@ export const StyledFooterNav = styled.div`
     }
 `
 
-export const StyledCoockies = styled.div`
+export const StyledCookies = styled.div`
     display: flex;
     justify-content: center;
     ul {

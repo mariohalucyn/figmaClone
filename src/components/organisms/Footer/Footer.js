@@ -2,7 +2,7 @@ import React from 'react'
 import GetStarted from '../../atoms/GetStarted/GetStarted'
 import AnimatedHeader from '../../atoms/AnimatedHeader/AnimatedHeader'
 import {
-    StyledCoockies,
+    StyledCookies,
     StyledFooterNav,
     StyledInfo,
     StyledWrapper,
@@ -196,12 +196,12 @@ const Footer = () => (
                 </li>
             </ul>
         </StyledFooterNav>
-        <StyledCoockies>
+        <StyledCookies>
             <ul>
                 <li>Cookie settings</li>
                 <li>English</li>
             </ul>
-        </StyledCoockies>
+        </StyledCookies>
     </StyledWrapper>
 )
 

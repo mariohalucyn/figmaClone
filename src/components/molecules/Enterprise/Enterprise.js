@@ -4,15 +4,15 @@ import { StyledWrapper } from '../../organisms/Header/StyledWrapper'
 const Enterprise = () => (
     <StyledWrapper>
         <ul>
-            <li>
-                <a href="">Overview</a>
-            </li>
-            <li>
-                <a href="">Customers</a>
-            </li>
-            <li>
-                <a href="">Contact sales</a>
-            </li>
+            <a href="">
+                <span>Overview</span>
+            </a>
+            <a href="">
+                <span>Customers</span>
+            </a>
+            <a href="">
+                <span>Contact sales</span>
+            </a>
         </ul>
     </StyledWrapper>
 )

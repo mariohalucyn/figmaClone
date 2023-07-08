@@ -1,14 +1,20 @@
 import React from 'react'
 import Header from './components/organisms/Header/Header'
 import Footer from './components/organisms/Footer/Footer'
+import Popup from './components/atoms/Popup/Popup'
+import styled from 'styled-components'
+
+const StyledWrapper = styled.html`
+    box-sizing: border-box;
+`
 
 const App = () => {
-    const siema = 'xd'
     return (
-        <>
+        <StyledWrapper>
             <Header />
-            <Footer props={siema} />
-        </>
+            <Footer />
+            <Popup />
+        </StyledWrapper>
     )
 }
 

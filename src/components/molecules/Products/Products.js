@@ -13,45 +13,45 @@ const StyledList = styled.ul`
 const Products = () => (
     <StyledWrapper>
         <StyledList>
-            <li>
-                <a href="">Figma</a>
+            <a href="">
+                <span>Figma</span>
                 <p>An all-in-one design platform</p>
                 <Figma />
-            </li>
-            <li>
-                <a href="">Design</a>
-            </li>
-            <li>
-                <a href="">Prototyping</a>
-            </li>
-            <li>
-                <a href="">Design systems</a>
-            </li>
-            <li>
-                <a href="">Developing</a>
-            </li>
-            <li>
-                <a href="">Downloads</a>
-            </li>
+            </a>
+            <a>
+                <span>Design</span>
+            </a>
+            <a href="">
+                <span>Prototyping</span>
+            </a>
+            <a href="">
+                <span>Design systems</span>
+            </a>
+            <a href="">
+                <span>Developing</span>
+            </a>
+            <a href="">
+                <span>Downloads</span>
+            </a>
         </StyledList>
         <ul>
-            <li>
-                <a href="">FigJam</a>
+            <a href="">
+                <span>FigJam</span>
                 <p>An online whiteboard for teams</p>
                 <img src={FigJam} alt="FigJam" />
-            </li>
-            <li>
-                <a href="">Online whiteboarding</a>
-            </li>
-            <li>
-                <a href="">Strategic planning</a>
-            </li>
-            <li>
-                <a href="">Team meetigs</a>
-            </li>
-            <li>
-                <a href="">Diagraming</a>
-            </li>
+            </a>
+            <a href="">
+                <span>Online whiteboarding</span>
+            </a>
+            <a href="">
+                <span>Strategic planning</span>
+            </a>
+            <a href="">
+                <span>Team meetigs</span>
+            </a>
+            <a href="">
+                <span>Diagraming</span>
+            </a>
         </ul>
     </StyledWrapper>
 )

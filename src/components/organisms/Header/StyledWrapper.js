@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { BorderBottomAnimation } from './BorderBottomAnimation'
 
 export const StyledWrapper = styled.div`
+    box-sizing: border-box;
     display: flex;
     position: absolute;
     top: 100%;
@@ -17,10 +18,10 @@ export const StyledWrapper = styled.div`
         padding: 0;
         list-style: none;
         border: 3px solid black;
-        li {
+        a {
             padding: 16px 24px;
             &:hover {
-                a {
+                span {
                     position: relative;
                     &::before {
                         content: '';

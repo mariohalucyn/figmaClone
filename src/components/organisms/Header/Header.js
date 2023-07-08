@@ -23,10 +23,11 @@ const Header = () => {
             </a>
             <StyledList>
                 <StyledListItem
+                    onClick={() => setIsProductHover(true)}
                     onMouseEnter={() => setIsProductHover(true)}
                     onMouseLeave={() => setIsProductHover(false)}
                 >
-                    <a href="">Products</a>
+                    <span>Products</span>
                     {isProductHover ? <Products /> : null}
                     <Arrow className="arrow" />
                 </StyledListItem>
@@ -34,26 +35,26 @@ const Header = () => {
                     onMouseEnter={() => setIsEnterpriseHover(true)}
                     onMouseLeave={() => setIsEnterpriseHover(false)}
                 >
-                    <a href="">Enterprise</a>
+                    <span>Enterprise</span>
                     {isEnterpriseHover ? <Enterprise /> : null}
                     <Arrow className="arrow" />
                 </StyledListItem>
-                <NavStyledListItem>
-                    <a href="">Pricing</a>
+                <NavStyledListItem href="">
+                    <span>Pricing</span>
                 </NavStyledListItem>
                 <StyledListItem
                     onMouseEnter={() => setIsResourcesHover(true)}
                     onMouseLeave={() => setIsResourcesHover(false)}
                 >
-                    <a href="">Resources</a>
+                    <span>Resources</span>
                     {isResourcesHover ? <Resources /> : null}
                     <Arrow className="arrow" />
                 </StyledListItem>
-                <NavStyledListItem>
-                    <a href="">Community</a>
+                <NavStyledListItem href="">
+                    <span>Community</span>
                 </NavStyledListItem>
-                <NavStyledListItem>
-                    <a href="">Log in</a>
+                <NavStyledListItem href="">
+                    <span>Log in</span>
                 </NavStyledListItem>
                 <GetStarted fontSize="18px" />
             </StyledList>

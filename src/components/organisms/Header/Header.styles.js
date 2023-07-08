@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { BorderBottomAnimation } from './BorderBottomAnimation'
 
 export const StyledWrapper = styled.div`
+    box-sizing: border-box;
     margin: 0;
     padding: 24px 48px;
     display: flex;
@@ -24,6 +25,7 @@ export const StyledListItem = styled.li`
     gap: 6px;
     margin: 0;
     padding: 8px 4px;
+    cursor: pointer;
     svg {
         overflow: hidden;
     }
@@ -41,21 +43,22 @@ export const StyledListItem = styled.li`
     }
 `
 
-export const NavStyledListItem = styled.li`
+export const NavStyledListItem = styled.a`
     position: relative;
     margin: 0;
     padding: 8px 4px;
+    text-decoration: none;
     img {
         overflow: hidden;
         pointer-events: none;
     }
-    a {
+    span {
         text-decoration: none;
         color: black;
         position: relative;
     }
     &:hover {
-        a {
+        span {
             position: relative;
             &::before {
                 content: '';
