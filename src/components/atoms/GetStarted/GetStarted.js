@@ -11,7 +11,6 @@ const StyledWrapper = styled.button`
         'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
         'Helvetica Neue', sans-serif;
     font-weight: 700;
-    font-size: 18px;
     font-size: ${({ fontSize }) => fontSize};
     padding: 14px 24px 16px;
     transition: 0.2s ease;
