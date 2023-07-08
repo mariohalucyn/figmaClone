@@ -14,10 +14,10 @@ const StyledWrapper = styled.button`
     font-size: 18px;
     font-size: ${({ fontSize }) => fontSize};
     padding: 14px 24px 16px;
-    margin: 0 0 0 8px;
     transition: 0.2s ease;
     width: ${({ width }) => width};
     height: ${({ height }) => height};
+    cursor: pointer;
     &:hover {
         transform: translateY(-4px);
     }

@@ -22,7 +22,6 @@ const AnimatedHeader = () => {
             setIndex(index++)
             setColor(colorArray[index])
             setState(wordArray[index])
-            console.log(index)
             if (index === 3) {
                 setIndex((index = -1))
             }

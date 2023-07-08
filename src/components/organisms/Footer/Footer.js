@@ -1,69 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
 import GetStarted from '../../atoms/GetStarted/GetStarted'
 import AnimatedHeader from '../../atoms/AnimatedHeader/AnimatedHeader'
-
-const StyledWrapper = styled.div`
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 48px;
-    background: black;
-    color: white;
-`
-
-const StyledFooterNav = styled.div`
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        list-style: none;
-        li {
-            a {
-                text-decoration: none;
-                color: white;
-                &:hover {
-                    border-bottom: 1px solid white;
-                }
-            }
-            &:first-child {
-                font-weight: 700;
-            }
-        }
-    }
-`
-
-const StyledDiv = styled.div`
-    display: flex;
-    justify-content: center;
-    ul {
-        display: flex;
-        gap: 36px;
-        list-style: none;
-        li {
-            a {
-                text-decoration: none;
-                color: white;
-            }
-            &:hover {
-                border-bottom: 1px solid white;
-            }
-        }
-    }
-`
-
-const StyledInfo = styled.div`
-    width: 1320px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`
+import {
+    StyledCoockies,
+    StyledFooterNav,
+    StyledInfo,
+    StyledWrapper,
+} from './Footer.styles'
 
 const Footer = () => (
     <StyledWrapper>
@@ -76,7 +19,7 @@ const Footer = () => (
         <StyledFooterNav>
             <ul>
                 <li>
-                    <h3>Figma</h3>
+                    <p>Figma</p>
                 </li>
                 <li>
                     <a href="/">Twitter</a>
@@ -93,7 +36,7 @@ const Footer = () => (
             </ul>
             <ul>
                 <li>
-                    <h3>Use Cases</h3>
+                    <p>Use Cases</p>
                 </li>
                 <li>
                     <a href="/">UI Design</a>
@@ -134,7 +77,7 @@ const Footer = () => (
             </ul>
             <ul>
                 <li>
-                    <h3>Explore</h3>
+                    <p>Explore</p>
                 </li>
                 <li>
                     <a href="/">Design features</a>
@@ -184,7 +127,7 @@ const Footer = () => (
             </ul>
             <ul>
                 <li>
-                    <h3>Resources</h3>
+                    <p>Resources</p>
                 </li>
                 <li>
                     <a href="/">Blog</a>
@@ -231,7 +174,7 @@ const Footer = () => (
             </ul>
             <ul>
                 <li>
-                    <h3>Compare</h3>
+                    <p>Compare</p>
                 </li>
                 <li>
                     <a href="/">Sketch</a>
@@ -253,12 +196,12 @@ const Footer = () => (
                 </li>
             </ul>
         </StyledFooterNav>
-        <StyledDiv>
+        <StyledCoockies>
             <ul>
                 <li>Cookie settings</li>
                 <li>English</li>
             </ul>
-        </StyledDiv>
+        </StyledCoockies>
     </StyledWrapper>
 )
 

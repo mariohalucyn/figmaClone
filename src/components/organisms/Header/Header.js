@@ -18,9 +18,9 @@ const Header = () => {
     const [isResourcesHover, setIsResourcesHover] = useState(false)
     return (
         <StyledWrapper>
-            <div>
+            <a href="">
                 <Logo />
-            </div>
+            </a>
             <StyledList>
                 <StyledListItem
                     onMouseEnter={() => setIsProductHover(true)}

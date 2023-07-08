@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { BorderBottomAnimation } from './BorderBottomAnimation'
 
 export const StyledWrapper = styled.div`
+    margin: 0;
     padding: 24px 48px;
     display: flex;
     justify-content: space-between;
@@ -12,7 +13,8 @@ export const StyledList = styled.ul`
     display: flex;
     align-items: center;
     margin: 0;
-    gap: 24px;
+    padding: 0;
+    gap: 16px;
 `
 
 export const StyledListItem = styled.li`
@@ -20,7 +22,8 @@ export const StyledListItem = styled.li`
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 8px 0;
+    margin: 0;
+    padding: 8px 4px;
     svg {
         overflow: hidden;
     }
@@ -40,7 +43,8 @@ export const StyledListItem = styled.li`
 
 export const NavStyledListItem = styled.li`
     position: relative;
-    padding: 8px 0;
+    margin: 0;
+    padding: 8px 4px;
     img {
         overflow: hidden;
         pointer-events: none;
