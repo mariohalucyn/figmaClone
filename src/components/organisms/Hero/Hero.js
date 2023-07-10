@@ -6,8 +6,9 @@ import { ReactComponent as Spring } from '../../../assets/icons/spring.svg'
 import { ReactComponent as Tags } from '../../../assets/icons/htmlTags.svg'
 import { gsap } from 'gsap'
 import { theme } from '../../../assets/themes/theme'
+import heroImage from '../../../assets/images/hero.png'
 
-const StyledWrapper = styled.div`
+const StyledHero = styled.div`
     h1 {
         font-size: 80px;
         margin: 0;
@@ -21,6 +22,15 @@ const StyledWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: end;
+`
+
+const StyledWrapper = styled.div`
+    width: 1320px;
+    margin: 0 auto;
+    img {
+        border-radius: 24px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
 `
 
 const colorArray = [
@@ -57,33 +67,36 @@ const Hero = () => {
 
     return (
         <StyledWrapper>
-            <div>
-                <h1>
-                    How you{' '}
-                    <strong>
-                        <span className="design">
-                            design <Quill />,
-                        </span>
-                    </strong>
-                    <strong>
-                        <span className="align">
-                            align <Spring />,
-                            <br />
-                        </span>
-                    </strong>{' '}
-                    and{' '}
-                    <strong>
-                        <span className="build">
-                            build <Tags />
-                        </span>
-                    </strong>{' '}
-                    matters. <br />
-                    Do it together with Figma.
-                </h1>
-            </div>
-            <GetStarted fontSize="36px" background="black">
-                Get Started
-            </GetStarted>
+            <StyledHero>
+                <div>
+                    <h1>
+                        How you{' '}
+                        <strong>
+                            <span className="design">
+                                design <Quill />,
+                            </span>
+                        </strong>
+                        <strong>
+                            <span className="align">
+                                align <Spring />,
+                                <br />
+                            </span>
+                        </strong>{' '}
+                        and{' '}
+                        <strong>
+                            <span className="build">
+                                build <Tags />
+                            </span>
+                        </strong>{' '}
+                        matters. <br />
+                        Do it together with Figma.
+                    </h1>
+                </div>
+                <GetStarted fontSize="36px" background="black">
+                    Get Started
+                </GetStarted>
+            </StyledHero>
+            <img src={heroImage}></img>
         </StyledWrapper>
     )
 }
