@@ -1,0 +1,21 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="47"
+    height="47"
+    fill="none"
+    viewBox="0 0 47 47"
+    className="figma-ssgmig"
+>
+    <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M23.5 42.36a18.86 18.86 0 1 0 0-37.72 18.86 18.86 0 0 0 0 37.72Zm0 3.64a22.5 22.5 0 1 0 0-45 22.5 22.5 0 0 0 0 45Z"
+        clipRule="evenodd"
+    ></path>
+    <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="m12.64 29.86-4.23-5.09-1.07-1.28 1.07-1.28 4.23-5.08h5.21l-5.3 6.36 5.3 6.37h-5.2Zm6.33 0 5.09-12.73h4.3l-5.09 12.73h-4.3Zm15.38 0h-5.21l5.3-6.37-5.3-6.36h5.2l4.24 5.08 1.07 1.28-1.07 1.28-4.23 5.09Z"
+        clipRule="evenodd"
+    ></path>
+</svg>

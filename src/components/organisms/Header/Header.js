@@ -56,7 +56,7 @@ const Header = () => {
                 <NavStyledListItem href="">
                     <span>Log in</span>
                 </NavStyledListItem>
-                <GetStarted fontSize="18px" />
+                <GetStarted fontSize="18px">Get started for free</GetStarted>
             </StyledList>
         </StyledWrapper>
     )

@@ -14,7 +14,7 @@ const StyledWrapper = styled.a`
         'Helvetica Neue', sans-serif;
     font-weight: 700;
     font-size: ${({ fontSize }) => fontSize};
-    padding: 14px 24px 16px;
+    padding: 18px 34px;
     transition: 0.2s ease;
     width: ${({ width }) => width};
     height: ${({ height }) => height};
@@ -24,15 +24,16 @@ const StyledWrapper = styled.a`
     }
 `
 
-const GetStarted = ({ width, height, fontSize }) => {
+const GetStarted = ({ width, height, fontSize, children, background }) => {
     return (
         <StyledWrapper
+            style={{ background: background }}
             href=""
             width={width}
             height={height}
             fontSize={fontSize}
         >
-            Get started for free
+            {children}
         </StyledWrapper>
     )
 }
@@ -41,6 +42,8 @@ GetStarted.propTypes = {
     width: PropTypes.string,
     height: PropTypes.string,
     fontSize: PropTypes.string,
+    children: PropTypes.string,
+    background: PropTypes.string,
 }
 
 export default GetStarted

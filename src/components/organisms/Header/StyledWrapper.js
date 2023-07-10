@@ -10,6 +10,7 @@ export const StyledWrapper = styled.div`
     padding: 0;
     transform: translate(-50%, 0%);
     background: white;
+    z-index: 1;
     ul {
         min-width: max-content;
         display: flex;

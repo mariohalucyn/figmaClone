@@ -12,9 +12,9 @@ const Footer = () => (
     <StyledWrapper>
         <StyledInfo>
             <AnimatedHeader />
-            <div>
-                <GetStarted fontSize="48px" width="500px" height="100px" />
-            </div>
+            <GetStarted fontSize="48px" width="500px" height="100px">
+                Get started for free
+            </GetStarted>
         </StyledInfo>
         <StyledFooterNav>
             <ul>
