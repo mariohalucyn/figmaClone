@@ -31,25 +31,25 @@ const colorArray = [
 
 const Hero = () => {
     const changeColor = () => {
-        const timeline = gsap.timeline({ repeat: -1, repeatDelay: 4 })
-        timeline.to('.design', { color: colorArray[1], duration: 0.4 })
-        timeline.to('.design', {
-            color: colorArray[3],
-            duration: 0.4,
-            delay: 4,
-        })
-        timeline.to('.align', { color: colorArray[0], duration: 0.4 })
-        timeline.to('.align', {
-            color: colorArray[3],
-            duration: 0.4,
-            delay: 4,
-        })
-        timeline.to('.build', { color: colorArray[2], duration: 0.4 })
-        timeline.to('.build', {
-            color: colorArray[3],
-            duration: 0.4,
-            delay: 4,
-        })
+        gsap.timeline({ repeat: -1 })
+            .to('.design', { color: colorArray[1], duration: 0.4 })
+            .to('.design', {
+                color: colorArray[3],
+                duration: 0.4,
+                delay: 4,
+            })
+            .to('.align', { color: colorArray[0], duration: 0.4 })
+            .to('.align', {
+                color: colorArray[3],
+                duration: 0.4,
+                delay: 4,
+            })
+            .to('.build', { color: colorArray[2], duration: 0.4 })
+            .to('.build', {
+                color: colorArray[3],
+                duration: 0.4,
+                delay: 4,
+            })
     }
 
     useEffect(() => changeColor, [])
