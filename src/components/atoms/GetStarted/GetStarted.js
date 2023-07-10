@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledWrapper = styled.a`
-    background: rgb(85, 81, 255);
-    color: rgb(255, 255, 255);
+    background: ${({ theme }) => theme.colors.blue};
+    color: ${({ theme }) => theme.colors.white};
     border-radius: 10px;
     text-decoration: none;
     box-sizing: border-box;

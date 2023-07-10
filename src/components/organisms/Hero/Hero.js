@@ -5,6 +5,7 @@ import { ReactComponent as Quill } from '../../../assets/icons/quill.svg'
 import { ReactComponent as Spring } from '../../../assets/icons/spring.svg'
 import { ReactComponent as Tags } from '../../../assets/icons/htmlTags.svg'
 import { gsap } from 'gsap'
+import { theme } from '../../../assets/themes/theme'
 
 const StyledWrapper = styled.div`
     h1 {
@@ -23,10 +24,10 @@ const StyledWrapper = styled.div`
 `
 
 const colorArray = [
-    'rgb(162, 89, 255)',
-    'rgb(85, 81, 255)',
-    'rgb(15, 169, 88)',
-    'rgb(0, 0, 0)',
+    theme.colors.purple,
+    theme.colors.blue,
+    theme.colors.green,
+    theme.colors.black,
 ]
 
 const Hero = () => {

@@ -6,8 +6,8 @@ export const StyledWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 48px;
-    background: black;
-    color: white;
+    background: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.white};
     margin: 0;
     padding: 48px 0;
 `
@@ -26,9 +26,10 @@ export const StyledFooterNav = styled.div`
         li {
             a {
                 text-decoration: none;
-                color: white;
+                color: ${({ theme }) => theme.colors.white};
                 &:hover {
-                    border-bottom: 1px solid white;
+                    border-bottom: 1px solid
+                        ${({ theme }) => theme.colors.white};
                 }
             }
             p {
@@ -53,14 +54,13 @@ export const StyledCookies = styled.div`
         li {
             a {
                 text-decoration: none;
-                color: white;
+                color: ${({ theme }) => theme.colors.white};
             }
             p {
                 margin: 0;
             }
             &:hover {
-                border-bottom: 1px solid white;
-            }
+                border-bottom: 1px solid ${({ theme }) => theme.colors.white};
         }
     }
 `

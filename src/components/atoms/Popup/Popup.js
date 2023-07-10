@@ -7,9 +7,9 @@ const StyledWrapper = styled.div`
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
-    background: rgb(200, 247, 69);
+    background: ${({ theme }) => theme.colors.lightGreen};
     padding: 24px 64px 24px 32px;
-    border: 3px solid black;
+    border: 3px solid ${({ theme }) => theme.colors.black};
     position: sticky;
     bottom: 0;
     width: 100%;
@@ -29,8 +29,8 @@ const StyledWrapper = styled.div`
     }
     a {
         text-decoration: none;
-        color: black;
-        border: 3px solid black;
+        color: ${({ theme }) => theme.colors.black};
+        border: 3px solid ${({ theme }) => theme.colors.black};
         border-radius: 8px;
         padding: 14px 24px;
         font-size: 18px;
@@ -55,7 +55,7 @@ const CloseButton = styled.div`
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
-        background: black;
+        background: ${({ theme }) => theme.colors.black};
         width: 24px;
         height: 3px;
     }
@@ -65,7 +65,7 @@ const CloseButton = styled.div`
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
-        background: black;
+        background: ${({ theme }) => theme.colors.black};
         width: 24px;
         height: 3px;
     }
