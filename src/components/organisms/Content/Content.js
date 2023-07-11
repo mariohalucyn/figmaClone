@@ -12,16 +12,14 @@ const StyledWrapper = styled.div`
     gap: 56px;
 `
 
-const Contact = () => {
-    return (
-        <StyledWrapper>
-            <Design />
-            <Prototype />
-            <DevMode />
-            <DesignSystems />
-            <FigJam />
-        </StyledWrapper>
-    )
-}
+const Content = () => (
+    <StyledWrapper>
+        <Design />
+        <Prototype />
+        <DevMode />
+        <DesignSystems />
+        <FigJam />
+    </StyledWrapper>
+)
 
-export default Contact
+export default Content

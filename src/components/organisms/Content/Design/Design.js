@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import GetStarted from '../../../atoms/GetStarted/GetStarted'
 import designImage from '../../../../assets/images/design.png'
 import styled from 'styled-components'
 import { StyledWrapper } from '../StyledWrapper'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const StyledContainer = styled.div`
     display: grid;
@@ -22,12 +25,20 @@ const StyledContainer = styled.div`
 `
 
 const Design = () => {
+    const myRef = useRef(null)
+    useEffect(() => {
+        const el = myRef.current
+        gsap.to(el, {
+            scrollTrigger: { trigger: el, markers: true },
+            background: 'blue',
+        })
+    }, [])
     return (
         <StyledWrapper>
             <div>
                 <strong>Design</strong>
                 <h1>Co-create in one space</h1>
-                <StyledContainer>
+                <StyledContainer ref={myRef}>
                     <div>
                         <p>
                             Work together in real time and empower designers to
