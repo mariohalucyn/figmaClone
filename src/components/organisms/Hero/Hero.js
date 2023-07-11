@@ -9,10 +9,6 @@ import { theme } from '../../../assets/themes/theme'
 import heroImage from '../../../assets/images/hero.png'
 
 const StyledHero = styled.div`
-    h1 {
-        font-size: 80px;
-        margin: 0;
-    }
     div {
         margin: 0;
     }
